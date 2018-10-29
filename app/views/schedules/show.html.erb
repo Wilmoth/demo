@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>日付</strong>
+  <%= @schedules.date %>
+</p>
+
+<p>
+  <strong>名字</strong>
+  <%= @schedules.username %>
+</p>
+
+<p>
+  <strong>予定</strong>
+  <%= @schedules.mark %>
+</p>
+
+<p>
+  <strong>コメント</strong>
+  <%= @schedules.comment %>
+</p>
+
+<%= link_to 'Edit', edit_schedule_path(@schedules) %> |
+<%= link_to 'Back', schedules_path %>

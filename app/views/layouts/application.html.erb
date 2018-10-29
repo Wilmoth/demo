@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>OrganizerApp</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="navbar navbar-default"> 
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">飲み会日程調整</a>
+        </div>
+      
+        <div class="collapse navbar-collapse" id="navbarEexample"> 
+          <ul class="nav navbar-nav">
+            <li><a href="/">カレンダー</a></li>
+            <li><a href="/schedules">スケジュール管理</a></li> 
+            <li><a href="/friends">友達管理</a></li>
+          </ul> 
+        </div>
+      </div> 
+    </nav>
+    <%= yield %>
+  </body>
+</html>
